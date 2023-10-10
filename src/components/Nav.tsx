@@ -1,6 +1,9 @@
+import { IoBagOutline } from "react-icons/io5";
+import { GoSearch } from "react-icons/go";
+
 const Nav = () => {
     return (
-        <div className='flex justify-center px-5 text-sm bg-[#E7E7E8] py-2'>
+        <div className='flex justify-center px-5 text-sm py-2'>
             <div className='flex justify-between py-1 w-full max-w-[1024px]'>
                 <div>logo</div>
                 <div>Store</div>
@@ -14,8 +17,12 @@ const Nav = () => {
                 <div>Entertainment</div>
                 <div>Accessirues</div>
                 <div>Support</div>
-                <div>search icon</div>
-                <div>bag icon</div>
+                <div>
+                    <GoSearch />
+                </div>
+                <div>
+                    <IoBagOutline />
+                </div>
             </div>
         </div>
     );
