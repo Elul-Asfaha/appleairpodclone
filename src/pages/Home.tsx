@@ -55,11 +55,11 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#E7E7E8] w-full py-1 flex justify-center'>
-                <p className='w-fit'>
+            <div className='bg-[#F5F5F7] w-full py-3 flex justify-center'>
+                <p className='w-fit text-sm'>
                     Get 6 months of Apple Music free with your AirPods.*
                 </p>
-                <div className='text-blue-700 flex items-center text-sm'>
+                <div className='text-blue-700 flex items-center text-[12px]'>
                     <p>Learn more</p>
                     <AiOutlineRight />
                 </div>

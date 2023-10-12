@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 
 const App = () => {
     return (
-        <div className='bg-[#E7E7E8]'>
+        <div className='bg-[#F5F5F7] font-Raleway'>
             <Nav />
             <Home />
         </div>
