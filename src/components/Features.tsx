@@ -9,8 +9,8 @@ const Features = () => {
         console.log(moveTo);
     };
     return (
-        <div className='max-w-[1520px] flex flex-col w-full overflow-x-hidden md:pt-32 items-center text-center px-5'>
-            <p className='text-5xl font-bold w-[500px] text-center  md:mb-16'>
+        <div className='max-w-[1520px] flex flex-col w-full overflow-x-hidden pt-20 md:pt-32 items-center text-center px-5'>
+            <p className='text-3xl md:text-5xl font-bold md:w-[500px] text-center mb-10 md:mb-16'>
                 A magical connection to your devices.
             </p>
             <div className='w-full scrollbar-hide'>

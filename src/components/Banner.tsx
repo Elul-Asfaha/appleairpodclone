@@ -21,7 +21,9 @@ const Banner = ({ video = false }: bannerType) => {
             >
                 <div></div>
                 <div className={` ${video ? "text-[#F5F5F7]" : "text-black"}`}>
-                    <p className='text-8xl font-bold'>AirPods Pro</p>
+                    <p className='text-5xl md:text-8xl font-bold'>
+                        AirPods Pro
+                    </p>
                     <p className='text-2xl `font-bold'>2nd generation</p>
                     <p className='text-3xl'>$243</p>
                 </div>
