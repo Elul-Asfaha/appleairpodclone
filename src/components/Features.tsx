@@ -18,7 +18,7 @@ const Features = () => {
                     className='flex gap-5'
                     style={{ transform: `translateX(-${move * 370}px)` }}
                 >
-                    <div className='relative min-w-[350px] bg-white min-h-[450px] rounded-xl'>
+                    <div className='relative min-w-[300px] md:min-w-[350px] bg-white min-h-[450px] rounded-xl'>
                         1
                         <div className='absolute inset-x-0 flex w-full items-center justify-between px-5 font-bold text-2xl bottom-5'>
                             <p>Automatic Switching</p>
@@ -27,7 +27,7 @@ const Features = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='relative min-w-[350px] bg-white min-h-[450px] rounded-xl'>
+                    <div className='relative min-w-[300px] md:min-w-[350px] bg-white min-h-[450px] rounded-xl'>
                         2
                         <div className='absolute inset-x-0 flex w-full items-center justify-between px-5 font-bold text-2xl bottom-5'>
                             <p>Automatic Switching</p>
@@ -36,7 +36,7 @@ const Features = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='relative min-w-[350px] bg-white min-h-[450px] rounded-xl'>
+                    <div className='relative min-w-[300px] md:min-w-[350px] bg-white min-h-[450px] rounded-xl'>
                         3
                         <div className='absolute inset-x-0 flex w-full items-center justify-between px-5 font-bold text-2xl bottom-5'>
                             <p>Automatic Switching</p>
@@ -45,7 +45,7 @@ const Features = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='relative min-w-[350px] bg-white min-h-[450px] rounded-xl'>
+                    <div className='relative min-w-[300px] md:min-w-[350px] bg-white min-h-[450px] rounded-xl'>
                         4
                         <div className='absolute inset-x-0 flex w-full items-center justify-between px-5 font-bold text-2xl bottom-5'>
                             <p>Automatic Switching</p>
@@ -54,7 +54,7 @@ const Features = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='relative min-w-[350px] bg-white min-h-[450px] rounded-xl'>
+                    <div className='relative min-w-[300px] md:min-w-[350px] bg-white min-h-[450px] rounded-xl'>
                         5
                         <div className='absolute inset-x-0 flex w-full items-center justify-between px-5 font-bold text-2xl bottom-5'>
                             <p>Automatic Switching</p>
