@@ -21,6 +21,7 @@ const generationsData = [
 ];
 import { AiOutlineRight } from "react-icons/ai";
 import Banner from "../components/Banner";
+import Features from "../components/Features";
 const Home = () => {
     const generationData = generationsData;
     return (
@@ -65,7 +66,9 @@ const Home = () => {
                 </div>
             </div>
             <Banner video={true} />
-            <Banner /> <Banner />
+            <Banner />
+            <Banner />
+            <Features />
         </div>
     );
 };
