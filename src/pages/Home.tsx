@@ -20,6 +20,7 @@ const generationsData = [
     },
 ];
 import Banner from "../components/Banner";
+import Compare from "../components/Compare";
 import Features from "../components/Features";
 const Home = () => {
     const generationData = generationsData;
@@ -67,6 +68,7 @@ const Home = () => {
             <Banner />
             <Banner />
             <Features />
+            <Compare />
         </div>
     );
 };
