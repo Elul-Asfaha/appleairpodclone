@@ -1,3 +1,8 @@
+import { BsBoxSeam } from "react-icons/bs";
+import { HiOutlineCurrencyDollar } from "react-icons/hi";
+import { IoChatbubblesOutline } from "react-icons/io5";
+import { BiMessageRoundedDetail } from "react-icons/bi";
+
 const data = [
     {
         name: "AirPods",
@@ -34,6 +39,7 @@ const data = [
         },
     },
 ];
+
 const Compare = () => {
     return (
         <div className='max-w-[1080px] flex flex-col w-full overflow-x-hidden pt-20 md:pt-32 items-center text-center px-5'>
@@ -109,14 +115,62 @@ const Compare = () => {
                                 </div>
                             )}
                             <div>
-                                <p className='text-3xl font-bold'>
+                                <p className='text-5xl font-semibold'>
                                     {items.features.duration[0]}
                                 </p>
-                                <p>{items.features.duration[1]}</p>
+                                <p className='px-5 pt-2 text-sm'>
+                                    {items.features.duration[1]}
+                                </p>
                             </div>
                         </div>
                     </div>
                 ))}
+            </div>
+            <p className='text-[#0066CC] hover:underline text-2xl py-10'>
+                Compare all AirPods models {">"}
+            </p>
+            <div className='py-10 border-y-2 grid grid-cols-2 gap-5'>
+                <div className='flex flex-col items-center p-16 gap-3'>
+                    <div className='text-3xl'>
+                        <BsBoxSeam />
+                    </div>
+                    <p>Fast, free delivery</p>
+                    <p>Or pick up available items at an Apple Store.</p>
+                    <button className='text-[#0077ED]'>Learn more {">"}</button>
+                </div>
+                <div className='flex flex-col items-center p-16 gap-3'>
+                    <div className='text-3xl'>
+                        <HiOutlineCurrencyDollar />
+                    </div>
+                    <p>Pay monthly at 0% APR</p>
+                    <p>
+                        You can pay over time when you choose to check out with
+                        Apple Card Monthly Installments.
+                    </p>
+                    <button className='text-[#0077ED]'>Learn more {">"}</button>
+                </div>
+                <div className='flex flex-col items-center p-16 gap-3'>
+                    <div className='text-3xl'>
+                        <IoChatbubblesOutline />
+                    </div>
+                    <p>Get help buying</p>
+                    <p>
+                        Have a question? Call a Specialist or chat online. Call
+                        1-800-MY-APPLE.
+                    </p>
+                    <button className='text-[#0077ED]'>Contact us {">"}</button>
+                </div>
+                <div className='flex flex-col items-center p-16 gap-3'>
+                    <div className='text-3xl'>
+                        <BiMessageRoundedDetail />
+                    </div>
+                    <p>Make them yours</p>
+                    <p>
+                        Engrave your AirPods with your initials or favorite
+                        emoji — free. Only at Apple.
+                    </p>
+                    <button className='text-[#0077ED]'>Learn more {">"}</button>
+                </div>
             </div>
         </div>
     );
