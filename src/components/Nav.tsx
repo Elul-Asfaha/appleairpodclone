@@ -4,9 +4,9 @@ import { GoSearch } from "react-icons/go";
 const Nav = () => {
     return (
         <div className='flex justify-center px-5 text-sm py-2'>
-            <div className='flex justify-between py-1 w-full max-w-[1024px]'>
+            <div className='flex justify-between gap-5 py-1 w-full max-w-[1024px]'>
                 <div>logo</div>
-                <div className='hidden md:flex justify-between'>
+                <div className='hidden w-full md:flex justify-between'>
                     <div>Store</div>
                     <div>Mac</div>
                     <div>iPad</div>
