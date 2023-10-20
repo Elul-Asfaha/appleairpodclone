@@ -13,10 +13,10 @@ const Banner = ({ video = false }: bannerType) => {
             }`}
         >
             <div
-                className={`flex flex-col justify-between items-center text-center w-full max-w-[1520px] ${
+                className={`flex flex-col gap-10 md:gap-0 justify-end md:justify-between items-center text-center w-full max-w-[1520px] ${
                     !video
                         ? "h-[73vh] bg-white"
-                        : "h-[90vh] bg-black text-white"
+                        : "h-[83vh] md:h-auto md:aspect-[4/2.81] bg-black text-white"
                 } rounded-2xl py-10`}
             >
                 <div></div>
@@ -38,7 +38,7 @@ const Banner = ({ video = false }: bannerType) => {
                         Buy
                     </button>
                     <div
-                        className={`flex gap-2 py-1 items-center ${
+                        className={`flex gap-2 md:py-1 items-center ${
                             video ? "text-[#F5F5F7]" : "text-blue-700"
                         }`}
                     >

@@ -38,6 +38,42 @@ const data = [
             ],
         },
     },
+    {
+        name: "AirPods Pro",
+        generation: "2nd generation",
+        price: "249",
+        features: {
+            adaptiveFetures: "Adaptive Audio",
+            noiseCanclation: "Active Noise Cancellation and Transparency mode",
+            conversationAwarness: "Conversation Awareness",
+            spitalAudio: "Personalized Spital Audio with dynamic head tracking",
+            dustResistance: "Dust, sweat, and water resistant",
+            chargingCase:
+                "MagSafe Charging Case (USB‑C) with speaker and lanyard loop ",
+            duration: [
+                "6 hrs ",
+                "Up to 6 hours of listening time with a single charge",
+            ],
+        },
+    },
+    {
+        name: "AirPods Max",
+        generation: "",
+        price: "549",
+        features: {
+            adaptiveFetures: "",
+            noiseCanclation: "Active Noise Cancellation andTransparency mode",
+            conversationAwarness: "",
+            spitalAudio:
+                "Personalized Spatial Audio with dynamic head tracking",
+            dustResistance: "",
+            chargingCase: "Smart Case",
+            duration: [
+                "6 hrs ",
+                "Up to 20 hours of listening time with a single charge",
+            ],
+        },
+    },
 ];
 
 const Compare = () => {
@@ -46,13 +82,13 @@ const Compare = () => {
             <p className='text-3xl md:text-5xl font-bold md:w-[400px] text-center mb-10 md:mb-16'>
                 Which AirPods are right for you?
             </p>
-            <div className='w-full grid grid-cols-4 gap-10'>
+            <div className='w-full grid grid-cols-2 md:grid-cols-4 gap-10'>
                 {data.map((items, index) => (
                     <div key={index} className='w-full'>
                         <div className='border-b-2 pb-7'>
                             <img src='' alt='' />
                             <p className='text-xl font-bold'>{items.name}</p>
-                            <p>{items.generation}</p>
+                            <p className='min-h-[24px]'>{items.generation}</p>
                             <p className='pt-5 pb-4'>${items.price}</p>
                             <button className='bg-[#0077ED] text-sm text-white py-[2px] px-3 rounded-full mb-2'>
                                 Buy
@@ -61,56 +97,56 @@ const Compare = () => {
                         </div>
                         <div className='flex flex-col gap-5 justify-center items-center'>
                             {items.features.adaptiveFetures ? (
-                                <p className='h-[200px]'>
-                                    {items.features.adaptiveFetures}
-                                </p>
+                                <div className='h-[60px] md:h-[200px] flex items-center'>
+                                    <p>{items.features.adaptiveFetures}</p>
+                                </div>
                             ) : (
-                                <div className='h-[200px] w-full flex justify-center items-center'>
+                                <div className='h-[60px] md:h-[200px] w-full flex justify-center items-center'>
                                     <p>-</p>
                                 </div>
                             )}
                             {items.features.noiseCanclation ? (
-                                <p className='h-[200px]'>
-                                    {items.features.noiseCanclation}
-                                </p>
+                                <div className='h-[60px] md:h-[200px] flex items-center'>
+                                    <p>{items.features.noiseCanclation}</p>
+                                </div>
                             ) : (
-                                <div className='h-[200px] w-full flex justify-center items-center'>
+                                <div className='h-[60px] md:h-[200px] w-full flex justify-center items-center'>
                                     <p>-</p>
                                 </div>
                             )}
                             {items.features.conversationAwarness ? (
-                                <p className='h-[200px]'>
-                                    {items.features.conversationAwarness}
-                                </p>
+                                <div className='h-[60px] md:h-[200px] flex items-center'>
+                                    <p>{items.features.conversationAwarness}</p>
+                                </div>
                             ) : (
-                                <div className='h-[200px] w-full flex justify-center items-center'>
+                                <div className='h-[60px] md:h-[200px] w-full flex justify-center items-center'>
                                     <p>-</p>
                                 </div>
                             )}
                             {items.features.spitalAudio ? (
-                                <p className='h-[200px]'>
-                                    {items.features.spitalAudio}
-                                </p>
+                                <div className='h-[60px] md:h-[200px] flex items-center'>
+                                    <p>{items.features.spitalAudio}</p>
+                                </div>
                             ) : (
-                                <div className='h-[200px] w-full flex justify-center items-center'>
+                                <div className='h-[60px] md:h-[200px] w-full flex justify-center items-center'>
                                     <p>-</p>
                                 </div>
                             )}
                             {items.features.dustResistance ? (
-                                <p className='h-[200px]'>
-                                    {items.features.dustResistance}
-                                </p>
+                                <div className='h-[60px] md:h-[200px] flex items-center'>
+                                    <p>{items.features.dustResistance}</p>
+                                </div>
                             ) : (
-                                <div className='h-[200px] w-full flex justify-center items-center'>
+                                <div className='h-[60px] md:h-[200px] w-full flex justify-center items-center'>
                                     <p>-</p>
                                 </div>
                             )}
                             {items.features.chargingCase ? (
-                                <p className='h-[200px]'>
-                                    {items.features.chargingCase}
-                                </p>
+                                <div className='h-[60px] md:h-[200px] flex items-center'>
+                                    <p>{items.features.chargingCase}</p>
+                                </div>
                             ) : (
-                                <div className='h-[200px] w-full flex justify-center items-center'>
+                                <div className='h-[60px] md:h-[200px] w-full flex justify-center items-center'>
                                     <p>-</p>
                                 </div>
                             )}
@@ -130,7 +166,7 @@ const Compare = () => {
                 Compare all AirPods models {">"}
             </p>
             <div className='py-10 border-y-2 grid grid-cols-2 gap-5'>
-                <div className='flex flex-col items-center p-16 gap-3'>
+                <div className='flex flex-col items-center px-5 md:p-16 gap-3'>
                     <div className='text-3xl'>
                         <BsBoxSeam />
                     </div>
@@ -138,7 +174,7 @@ const Compare = () => {
                     <p>Or pick up available items at an Apple Store.</p>
                     <button className='text-[#0077ED]'>Learn more {">"}</button>
                 </div>
-                <div className='flex flex-col items-center p-16 gap-3'>
+                <div className='flex flex-col items-center px-5 md:p-16 gap-3'>
                     <div className='text-3xl'>
                         <HiOutlineCurrencyDollar />
                     </div>
@@ -149,7 +185,7 @@ const Compare = () => {
                     </p>
                     <button className='text-[#0077ED]'>Learn more {">"}</button>
                 </div>
-                <div className='flex flex-col items-center p-16 gap-3'>
+                <div className='flex flex-col items-center px-5 md:p-16 gap-3'>
                     <div className='text-3xl'>
                         <IoChatbubblesOutline />
                     </div>
@@ -160,7 +196,7 @@ const Compare = () => {
                     </p>
                     <button className='text-[#0077ED]'>Contact us {">"}</button>
                 </div>
-                <div className='flex flex-col items-center p-16 gap-3'>
+                <div className='flex flex-col items-center px-5 md:p-16 gap-3'>
                     <div className='text-3xl'>
                         <BiMessageRoundedDetail />
                     </div>
